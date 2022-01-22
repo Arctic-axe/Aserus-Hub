@@ -1,9 +1,15 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-
+wait(0.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "REMEMBER"; 
+Text = "8 and 9 are the keybinds to open and close the gui";
+Duration = 5; 
+})
+wait(0.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "WARNING"; 
+Text = "These scripts are not mine I dont claim them as my own"; 
+Duration = 5; 
+})
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -14723,14 +14729,14 @@ coroutine.wrap(LNIPS_fake_script)()
 local Plr = game.Players.LocalPlayer
 
 Plr:GetMouse().KeyDown:Connect(function(K)
-    if K == "9" then
+    if K == "8" then
         main.Visible = true
     end
 end)
 local Plr = game.Players.LocalPlayer
 
 Plr:GetMouse().KeyDown:Connect(function(K)
-    if K == "8" then
+    if K == "9" then
         main.Visible = false
     end
     end)
